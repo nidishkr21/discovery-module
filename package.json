@@ -1,0 +1,14 @@
+{
+  "name": "discovery-module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install": "cd extract-json && bundle install",
+    "postinstall": "cd discover && npm install",
+    "start": "cd extract-json && bundle exec ruby convert.rb && cd - && cd discover && node index.js",
+    "start-clean": "cd discover && node index.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
